@@ -1,0 +1,2855 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vocaloid History</title>
+
+<style>
+body{
+    margin:0;
+    background:black;
+    color:white;
+    font-family:sans-serif;
+}
+
+/* トップ */
+.home{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.menu{
+    display:flex;
+    gap:20px;
+}
+
+.menu button{
+    padding:20px 40px;
+    font-size:20px;
+    background:none;
+    color:white;
+    border:1px solid white;
+    cursor:pointer;
+}
+
+/* ページ */
+.page{
+    display:none;
+    padding:20px;
+}
+
+.active{
+    display:block;
+}
+
+/* 年代 */
+.year{
+    margin-top:40px;
+    font-size:24px;
+    border-bottom:1px solid white;
+}
+
+/* ギャラリー */
+.gallery{
+    display:flex;
+    overflow-x:auto;
+    gap:10px;
+    margin-top:15px;
+    padding-bottom:10px;
+    scroll-behavior:smooth;
+}
+
+.item{
+    flex:0 0 auto;
+    width:180px;
+    text-align:center;
+}
+
+.item img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.item img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.item img:hover{
+    opacity:0.7;
+}
+
+.item{
+    text-align:center;
+}
+
+.title{
+    text-align:center;
+    margin-top:8px;
+}
+
+/* スマホ */
+@media(max-width:600px){
+
+    .menu{
+        flex-direction:column;
+        width:80%;
+    }
+
+    .gallery{
+        overflow-x:auto;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- トップ -->
+<div class="home" id="home">
+    <div class="menu">
+        <button onclick="showPage('songs')">楽曲一覧</button>
+        <button onclick="showPage('history')">概要</button>
+    </div>
+</div>
+
+<!-- 楽曲一覧 -->
+<div class="page" id="songs">
+
+<button onclick="backHome()">←戻る</button>
+
+<h1>ボカロ楽曲一覧</h1>
+
+<P>
+気になる写真を押すとYouTubeまたはニコニコ動画に飛びます。
+注意がついているもの聞くときにイヤホンした方がいい曲です。
+写真きえてしまってるはリンクはあるので曲は聞けます！<br>
+曲の数が多く載せられていないのもあるので、ぜひ調べてみてください！
+</P>
+
+<div class="year">2007年</div>
+
+<div class="gallery">
+
+    <div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm1050729')">
+<img src="koisuru.jpg" alt="恋スルVOC@LOID">
+<div class="title">恋スルVOC@LOID</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm1097445')">
+<img src="mikumiku.jpg" alt="みくみくにしてあげる♪【してやんよ】">
+<div class="title">みくみくにしてあげる♪【してやんよ】</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm1136355')">
+<img src="pac.jpg" alt="Packaged">
+<div class="title">Packaged</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm1188147')">
+<img src="den.jpg" alt="電脳スキル">
+<div class="title">電脳スキル</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm1427306')">
+<img src="sakura.jpg" alt="桜の季節">
+<div class="title">桜の季節</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm1656992')">
+<img src="kimi.jpg" alt="きみをわすれない">
+<div class="title">きみをわすれない</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm1274898')">
+<img src="hazi.jpg" alt="ハジメテノオト">
+<div class="title">ハジメテノオト</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.youtube.com/watch?v=o1jAMSQyVPc')">
+<img src="melt.jpg" alt="メルト">
+<div class="title">メルト</div>
+</div>
+
+
+
+
+
+</div>
+
+<div class="year">2008年</div>
+
+<div class="gallery">
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/VWVtIg5cdDU?si=gbxxZirieDL8h8SZ')">
+<img src="syousitu.jpg" alt="初音ミクの消失">
+<div class="title">初音ミクの消失</div>
+</div>
+
+    <div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm2972481')">
+<img src="owata.jpg" alt="トルコ行進曲 オワタ＼(^o^)／">
+<div class="title">トルコ行進曲 オワタ＼(^o^)／</div>
+</div>
+
+    <div class="item"
+onclick="openYoutube('https://youtu.be/jDop41Bxq2A?si=pq51sKh894COCsX_')">
+<img src="koiha.jpg" alt="恋は戦争">
+<div class="title">恋は戦争</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/gHYBLM3OdL4?si=z8KnPaG0mRW4gNiU')">
+<img src="kokoro.jpg" alt="ココロ">
+<div class="title">ココロ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.youtube.com/watch?v=Kv2dQG9YqE0')">
+<img src="world.jpg" alt="ワールドイズマイン">
+<div class="title">ワールドイズマイン</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/myEsj-qf73A?si=TCI3pJc1taCFbS6E')">
+<img src="Fire.jpg" alt="Fire◎Flower">
+<div class="title">Fire◎Flower</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/3eeqbqKGLPA?si=6HCvdIrokzg7p4D5')">
+<img src="celluloid.jpg" alt="celluloid">
+<div class="title">celluloid</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/LGxLbCQQkjI?si=-2qXhm-MrykPHm79')">
+<img src="rosin.jpg" alt="炉心融解">
+<div class="title">炉心融解</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm5508956')">
+<img src="popo.jpg" alt=ぽっぴっぽー">
+<div class="title">ぽっぴっぽー</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/RnO96AyugVs?si=D7Y8Dn7-8VsYXsj3')">
+<img src="mesi.jpg" alt="悪ノ召使">
+<div class="title">悪ノ召使</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/A5jmoqYup44?si=xqMc4LpjMNfFI3rd')">
+<img src="musume.jpg" alt="悪ノ娘">
+<div class="title">悪ノ娘</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm3645817')">
+<img src="brs.jpg" alt="ブラック★ロックシューター">
+<div class="title">ブラック★ロックシューター</div>
+</div>
+
+</div>
+
+<div class="year">2009年</div>
+
+<div class="gallery">
+
+    <div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm6115924')">
+<img src="iroha.jpg" alt="いろは唄">
+<div class="title">いろは唄</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm7528841')">
+<img src="Just.jpg" alt="Just Be Friends">
+<div class="title">Just Be Friends</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm6909505')">
+<img src="mag.jpg" alt="magnet">
+<div class="title">magnet</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm6609407')">
+<img src="migiri.jpg" alt="右肩の蝶 feat.鏡音リン">
+<div class="title">右肩の蝶 feat.鏡音レン</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm6928368')">
+<img src="migi.jpg" alt="右肩の蝶 feat.鏡音リン">
+<div class="title">右肩の蝶 feat.鏡音レン</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm8228650')">
+<img src="No.jpg" alt="No Logic">
+<div class="title">No Logic</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm8269164')">
+<img src="para.jpg" alt="パラジクロロベンゼン">
+<div class="title">パラジクロロベンゼン</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/b_cuMcDWwsI?si=_dc4PbA-6PPgfwu2')">
+<img src="ura.jpg" alt="裏表ラバーズ">
+<div class="title">裏表ラバーズ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/8xFBLego17k?si=3A9PWSlvWJQloPKB')">
+<img src="1925.jpg" alt="1925">
+<div class="title">1925</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/hC8KrIY8qT4?si=d7meOG1zWM3DnNfU')">
+<img src="dabu.jpg" alt="ダブルラリアット">
+<div class="title">ダブルラリアット</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/lF7Ij3-Jlt0?si=Vx3jKpuXGUCX59O5')">
+<img src="maji.jpg" alt="マジカル☆ぬこレンレン">
+<div class="title">マジカル☆ぬこレンレン</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/tW90lu944Es?si=6pYkpMT6LDv-pCKt')">
+<img src="280.jpg" alt="くるみ ☆ ぽんちお">
+<div class="title">くるみ ☆ ぽんちお　　＊注意＊</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm7756597')">
+<img src="sp.jpg" alt="SPiCa">
+<div class="title">SPiCa</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm6119955')">
+<img src="ruka.jpg" alt="ルカルカ★ナイトフィーバー">
+<div class="title">ルカルカ★ナイトフィーバー</div>
+</div>
+
+</div>
+
+<div class="year">2010年</div>
+
+<div class="gallery">
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/MFEaIgMkR_0?si=75RvqbElf_acjm6z')">
+<img src="geki.jpg" alt="初音ミクの激唱">
+<div class="title">初音ミクの激唱</div>
+</div>
+
+    <div class="item"
+onclick="openYoutube('https://youtu.be/rPECSTqQPYg?si=1jXrg9jNgDES8zWj')">
+<img src="torinoko.jpg" alt="トリノコシティ">
+<div class="title">トリノコシティ</div>
+</div>
+
+    <div class="item"
+onclick="openYoutube('https://youtu.be/rCm83lCpK7M?si=l7ZFzuVDntOvKbut')">
+<img src="Piano.webp" alt="PIANO*GIRL">
+<div class="title">PIANO*GIRL</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/HYJfAqd9Uxw?si=iQVAVfacKV8D_ekp')">
+<img src="sini.jpg" alt="死にたがり">
+<div class="title">死にたがり</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm10122021')">
+<img src="e.jpg" alt="え？あぁ、そう。">
+<div class="title">え？あぁ、そう。</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm9711503')">
+<img src="swe.jpg" alt="Sweet Devil">
+<div class="title">Sweet Devil</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/HHS0-LaD0R4?si=UfnuoujG7h-zSKGt')">
+<img src="the.jpg" alt="The Beast.">
+<div class="title">The Beast.</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/2CwBFr-Eoxg?si=T2cMHo0Hy_wr-cKY')">
+<img src="sin.jpg" alt="深海少女">
+<div class="title">深海少女</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm12050471')">
+<img src="cal.jpg" alt="Calc.">
+<div class="title">Calc.</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/f8ubInQcVAY?si=H_KHh1-h7bOcatiI')">
+<img src="aimei.jpg" alt="愛迷エレジー">
+<div class="title">愛迷エレジー</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm11509720')">
+<img src="nya.jpg" alt="Nyanyanyanyanyanyanya!">
+<div class="title">Nyanyanyanyanyanyanya!</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm11559163')">
+<img src="tori.jpg" alt="トリノコシティ">
+<div class="title">トリノコシティ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm12098837')">
+<img src="ta.jpg" alt=" タイムマシン">
+<div class="title"> タイムマシン</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm12589203')">
+<img src="kuri.jpg" alt="繰り返し一粒 feat.初音ミク">
+<div class="title">繰り返し一粒 feat.初音ミク</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/HOz-9FzIDf0?si=CcYVORAsA-Yeas_a')">
+<img src="mato.jpg" alt="マトリョシカ">
+<div class="title">マトリョシカ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/EahYs-8tTjQ?si=52h85PdANM3ZMSyn')">
+<img src="rinne.jpg" alt="リンネ">
+<div class="title">リンネ</div>
+</div>
+
+</div>
+
+<div class="year">2011年</div>
+
+<div class="gallery">
+
+    <div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/nm14629738')">
+<img src="asuto.webp" alt="アストロノーツ">
+<div class="title">アストロノーツ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm15022913')">
+<img src="kara.jpg" alt="からくりピエロ">
+<div class="title">からくりピエロ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/EjYwEoZHKvQ?si=QO8TSrCwY4t3cY7P')">
+<img src="kiri.jpg" alt=" キリトリセン ">
+<div class="title"> キリトリセン </div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/aB-pIUzPB-I?si=hEcQdJ8THGl0KucA')">
+<img src="siryo.jpg" alt="シリョクケンサ">
+<div class="title">シリョクケンサ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/EMGyiiTC7sg?si=KmkcADszRH_oxplR')">
+<img src="kage.jpg" alt="カゲロウデイズ">
+<div class="title">カゲロウデイズ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/2-zPY0vrpjQ?si=3dQ36kE3y8ONyueg')">
+<img src="ama.jpg" alt="天ノ弱">
+<div class="title">天ノ弱</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/0RU_05zpETo?si=ssmUVZU2cVrbCrFy')">
+<img src="panda.jpg" alt="パンダヒーロー">
+<div class="title">パンダヒーロー</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/KmvydnVTriE?si=stEMyvCmEusuo5rg')">
+<img src="fre.jpg" alt="FREELY TOMORROW">
+<div class="title">FREELY TOMORROW</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/uMlv9VWAxko?si=5CPT_j-HPab0Ud4r')">
+<img src="an.jpg" alt="アンハッピーリフレイン">
+<div class="title">アンハッピーリフレイン</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/vXSpdipuiFs?si=B9MfxnCDmEivviZo')">
+<img src="inb.jpg" alt="インビジブル">
+<div class="title">インビジブル</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/eSI7RsjZy1E?si=h1fEvgl-9XXZboOk')">
+<img src="tkt.jpg" alt="東京テディベア">
+<div class="title">東京テディベア</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/IN3kbST908c?si=FLiYa2uHY9GdxJeL')">
+<img src="jins.jpg" alt="人生リセットボタン">
+<div class="title">人生リセットボタン</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/sHnvEsNU1X0?si=hZu-SozHBUoq6c2f')">
+<img src="kusa.jpg" alt="腐れ外道とチョコレゐト">
+<div class="title">腐れ外道とチョコレゐト</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/shs0rAiwsGQ?si=meBtruw_DX5y3DxP')">
+<img src="senb.jpg" alt="千本桜">
+<div class="title">千本桜</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/xcNFyPciZ0g?si=RWIY-pjGP9pmXuA5')">
+<img src="aa.jpg" alt="嗚呼、素晴らしきニャン生">
+<div class="title">嗚呼、素晴らしきニャン生</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm16151841')">
+<img src="kuriri.jpg" alt="繰り返し一粒 feat.鏡音リン">
+<div class="title">繰り返し一粒 feat.鏡音リン</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/m0D-hgRD58o?si=RGmzZQarnq0XAkyJ')">
+<img src="zare.jpg" alt="戯言スピーカー">
+<div class="title">戯言スピーカー</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/xC_lHFBen5k?si=yQ7WlPHQ-f2-1RLf')">
+<img src="akuto.jpg" alt="悪徳のジャッジメント">
+<div class="title">悪徳のジャッジメント</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/khNi_6PnvaE?si=6BAJgZ--8wD9WtDQ')">
+<img src="kitune.jpg" alt="狐の嫁入り">
+<div class="title">狐の嫁入り</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/0kSRyKPkC4w?si=mPYeUPjevywRtkeR')">
+<img src="heddo.jpg" alt="ヘッドフォンアクター">
+<div class="title">ヘッドフォンアクター</div>
+</div>
+
+</div>
+
+<div class="year">2012年</div>
+
+<div class="gallery">
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/Ey_NHZNYTeE?si=GRc9nglMmEXHBX5a')">
+<img src="nou.jpg" alt="脳漿炸裂ガール">
+<div class="title">脳漿炸裂ガール</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/ooy2FUZ4oI8?si=GB7-Wf_2h-c7CQnF')">
+<img src="ooka.jpg" alt="おおかみは赤ずきんに恋をした">
+<div class="title">おおかみは赤ずきんに恋をした</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/PqJNc9KVIZE?si=x8TfgVSBrvLj3pIh')">
+<img src="tell.jpg" alt="Tell Your World">
+<div class="title">Tell Your World</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/CWlvjBaCh8E?si=f1dJc0j8evc9kRcG')">
+<img src="setu.jpg" alt="セツナトリップ">
+<div class="title">セツナトリップ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/dBa8emykxEo?si=NE1wATZZbDb2odTe')">
+<img src="tote.jpg" alt="とても痛い痛がりたい">
+<div class="title">とても痛い痛がりたい</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/WDUA7z3703g?si=w6c1ZkyY8r61o1VZ')">
+<img src="Bad.jpg" alt="Bad ∞ End ∞ Night">
+<div class="title">Bad ∞ End ∞ Night</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/bphS6_wayug?si=kBIHqLbmlgkU5uPI')">
+<img src="dore.jpg" alt="ドレミファロンド">
+<div class="title">ドレミファロンド</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/Om3MTou2kPg?si=3bjAELEHUMkGx4o3')">
+<img src="roku.jpg" alt="六兆年と一夜物語">
+<div class="title">六兆年と一夜物語</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/3f3HrNOsQqQ?si=wiMvt6S1DA85ulub')">
+<img src="tye.jpg" alt="チェックメイト">
+<div class="title">チェックメイト</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/clPjNKWe6N0?si=sOolbFDpfyETjCup')">
+<img src="aironi.jpg" alt="アイロニ">
+<div class="title">アイロニ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/kzUmM-uQVOM?si=V8UO1MMj3e5zPdlD')">
+<img src="kotira.jpg" alt="こちら、幸福安心委員会です。">
+<div class="title">こちら、幸福安心委員会です。</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/s8KBk8ZRH54?si=KrYLUBUptOkE_mI3')">
+<img src="tikyu.jpg" alt="地球最後の告白を">
+<div class="title">地球最後の告白を</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/M7O11PAcAw4?si=5ojGwSK-3P5gMWG1')">
+<img src="Crazy.jpg" alt="Crazy ∞ nighT">
+<div class="title">Crazy ∞ nighT</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/NKYqJ3UvjIk?si=sBLVR-E99P_JnwaY')">
+<img src="yosi.jpg" alt="吉原ラメント">
+<div class="title">吉原ラメント　＊注意＊</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/oBgADhsOoog?si=lSHGc22ttCDecDQP')">
+<img src="iaru.jpg" alt="いーあるふぁんくらぶ">
+<div class="title">いーあるふぁんくらぶ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/UKVioegPPds?si=LacezuFgzEAHo0dQ')">
+<img src="hitori.jpg" alt="独りんぼエンヴィー">
+<div class="title">独りんぼエンヴィー</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/eRqXpQD4rlw?si=h4kI3BEbZGAJkyYw')">
+<img src="daredemo.jpg" alt="誰でもいいから付き合いたい">
+<div class="title">誰でもいいから付き合いたい</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm19532707')">
+<img src="otn.jpg" alt="ギガンティックO.T.N">
+<div class="title">ギガンティックO.T.N　＊注意＊</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/xGNQOqtGU_E?si=ld1Uhy1ry2fOYSKD')">
+<img src="ihuu.jpg" alt="威風堂々">
+<div class="title">威風堂々　＊注意＊</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/HUzLUGKwQJc?si=bVR5zbF6Jblb8_6R')">
+<img src="ODDS.jpg" alt="ODDS & ENDS">
+<div class="title">ODDS & ENDS</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/8Z3TbMBfDM0?si=JSNKgCmTHfDiFY0W')">
+<img src="arihu.jpg" alt="ありふれたせかいせいふく">
+<div class="title">ありふれたせかいせいふく</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/eRa90TjoMZs?si=pQ5M2r14u-8I787l')">
+<img src="ringo.jpg" alt="林檎売りの泡沫少女">
+<div class="title">林檎売りの泡沫少女</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/WhRBeW8IOgs?si=AFmlaFrqPuZPPx3h')">
+<img src="ten.jpg" alt="てんしょう　しょうてんしょう">
+<div class="title">てんしょう　しょうてんしょう</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/FaWZlXPwyKE?si=skHjz26GozPRJuN1')">
+<img src="kouhuku.jpg" alt="幸福な死を">
+<div class="title">幸福な死を</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/g--Qmi048Vw?si=HouHIogGL5rgp69r')">
+<img src="siki.jpg" alt="四季刻歌">
+<div class="title">四季刻歌</div>
+</div>
+
+
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/-y3BSoHOT9A?si=bTftSaVCWaNyUWqS')">
+<img src="kisaragi.jpg" alt="如月アテンション">
+<div class="title">如月アテンション</div>
+</div>
+
+</div>
+
+<div class="year">2013年</div>
+
+<div class="gallery">
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/qnX2CdOBcDI?si=tLCRYxesLQ_Qdw-z')">
+<img src="dona.jpg" alt="ドーナツホール">
+<div class="title">ドーナツホール</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/nPF7lit7Z00?si=4By9ieu8SKMpIMyC')">
+<img src="dekina.jpg" alt="君はできない子">
+<div class="title">君はできない子</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/O9eHRiaTuL4?si=yOTmcKckX9tdvZcC')">
+<img src="sikabane.jpg" alt="しかばねの踊り">
+<div class="title">しかばねの踊り</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/MqNmKnCNLyM?si=M64WCA2xeK6Taxxj')">
+<img src="seisou.jpg" alt="聖槍爆裂ボーイ">
+<div class="title">聖槍爆裂ボーイ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/yJTQuDCnMjg?si=L2y5_kjpQbSWAHmz')">
+<img src="rosu.jpg" alt="ロスタイムメモリー">
+<div class="title">ロスタイムメモリー</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/aPDaFGqMX4I?si=yvKX_bHcGy_iHISD')">
+<img src="yoa.jpg" alt="夜咄ディセイブ">
+<div class="title">夜咄ディセイブ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/qB4xRKllyeI?si=GLkDDuj_eJFtA002')">
+<img src="sama.jpg" alt="サマータイムレコード">
+<div class="title">サマータイムレコード</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/YgnuJLo9S-Y?si=cT-3SicmMSBNUmEj')">
+<img src="yuuyake.jpg" alt="夕景イエスタデイ">
+<div class="title">夕景イエスタデイ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/pLYKKC-EpjA?si=5ebtPtm_fbEzDPoh')">
+<img src="ayano.jpg" alt="アヤノの幸福理論">
+<div class="title">アヤノの幸福理論</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/xEhKWS53RfY?si=zKbNb3jo_JOadhxd')">
+<img src="issyoku.jpg" alt="一触即発☆禅ガール">
+<div class="title">一触即発☆禅ガール</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/WA_6kcUA_Ls?si=2y_h8GB9KtxjUZ3R')">
+<img src="tyo.jpg" alt="猪突猛進ガール">
+<div class="title">猪突猛進ガール</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/rkFQGtybKmw?si=PWl9xIAiY8bLfAK2')">
+<img src="Puppet Theater of Twee-Box.jpg" alt="Puppet Theater of Twee-Box">
+<div class="title">Puppet Theater of Twee-Box</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/HswIHVN5D4o?si=VkyUzp_pp_vCkxq-')">
+<img src="auta.jpg" alt="アウターサイエンス">
+<div class="title">アウターサイエンス</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/w2ySuxC2SNI?si=Ao9Z5LkhdIVR1_wj')">
+<img src="haiboku.png" alt="敗北の少年">
+<div class="title">敗北の少年</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/SnUBLV4njNc?si=U4vIVpDvgfHZAnNg')">
+<img src="mea.jpg" alt="メアの教育">
+<div class="title">メアの教育</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/D6WCJwIlt94?si=hqiIkkfz9ia1hzL9')">
+<img src="siturenn.jpg" alt="失恋リピーター">
+<div class="title">失恋リピーター</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/8oBV3jPTW4s?si=UoNMmOyWHCSSSTJc')">
+<img src="rosutow.jpg" alt="ロストワンの号哭">
+<div class="title">ロストワンの号哭</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/AqI97zHMoQw?si=TbwfqWlNLC1hNOxa')">
+<img src="A.jpg" alt="少女A">
+<div class="title">少女A</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/sWvZfwY8beg?si=oQWPIg36_Fu4g5RO')">
+<img src="mou.jpg" alt="妄想税">
+<div class="title">妄想税</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/WiUjG9fF3zw?si=IjWslj6KFPgPe5gj')">
+<img src="biba.jpg" alt="ビバハピ">
+<div class="title">ビバハピ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/qYAmduGAwBQ?si=JgXMkek_bYjvQZDA')">
+<img src="oko.jpg" alt="おこちゃま戦争">
+<div class="title">おこちゃま戦争</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/U2-K_eFGtJM?si=dxgHlzg3FkP3Dnky')">
+<img src="toumei.jpg" alt="透明エレジー">
+<div class="title">透明エレジー</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/lwT4h6x3UM0?si=eS9HyP3lSLhahgNj')">
+<img src="siawase.jpg" alt="幸せになれる隠しコマンドがあるらしい">
+<div class="title">幸せになれる隠しコマンドがあるらしい</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/fM9O46yr-kg?si=peFfukCARho76UGv')">
+<img src="It's A Whole World.jpg" alt="It's A Whole World">
+<div class="title">It's A Whole World</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/HdC2cB_DZok?si=u9goYyXKa47OdHS5')">
+<img src="how.jpg" alt="ハウトゥー世界征服">
+<div class="title">ハウトゥー世界征服</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm21870906')">
+<img src="nounai.jpg" alt="脳内革命ガール">
+<div class="title">脳内革命ガール</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/L0tcMxp8Iy8?si=kyT5M1cXInqgUBba')">
+<img src="ikanaide.jpg" alt="いかないで">
+<div class="title">いかないで</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/QA5zuzc1WYA?si=x66jnMe6GcRcFLcr')">
+<img src="coin.jpg" alt="コインロッカーベイビー">
+<div class="title">コインロッカーベイビー</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/XZnmfDByGWU?si=LABfYhNkVyP_ucgG')">
+<img src="sinde.jpg" alt="しんでしまうとはなさけない！">
+<div class="title">しんでしまうとはなさけない！</div>
+</div>
+
+
+
+</div>
+
+<div class="year">2014年</div>
+
+<div class="gallery">
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/TXzfQ0cP1P0?si=AArcgVgF4ihUFKWQ')">
+<img src="renai.jpg" alt="恋愛裁判">
+<div class="title">恋愛裁判</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/XogSflwXgpw?si=eu9DRYYxhiA3WqqZ')">
+<img src="asu..png" alt="アスノヨゾラ哨戒班 ">
+<div class="title">アスノヨゾラ哨戒班 </div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/TkroHwQYpFE?si=fxyQMNNWptmO5-Qw')">
+<img src="hibikase.jpg" alt="ヒビカセ">
+<div class="title">ヒビカセ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/b2GJcYBoVyg?si=C7IjYsGALhCCaZxk')">
+<img src="kami.jpg" alt="神のまにまに">
+<div class="title">神のまにまに</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/ARt2fVT33Lw?si=xDIKTLA3uTu3rOXr')">
+<img src="suro.jpg" alt="すろぉもぉしょん">
+<div class="title">すろぉもぉしょん</div>
+</div>
+
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/7JANm3jOb2k?si=6p2HyWL2QVhTdLZd')">
+<img src="umiyu.jpg" alt="ウミユリ海底譚">
+<div class="title">ウミユリ海底譚</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/EpFxTXgElLA?si=QvCohpUrkI-er2rU')">
+<img src="yoake.jpg" alt="夜明けと蛍">
+<div class="title">夜明けと蛍</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/p2Irc9NPCtk?si=0Ul4r6KFABqaZM2-')">
+<img src="tugihagi.L" alt="ツギハギスタッカート">
+<div class="title">ツギハギスタッカート</div>
+</div>
+
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/RIA-vEJB1Aw?si=_wwOJqHljWQ6PZgj')">
+<img src="purasu.jpg" alt="＋♂">
+<div class="title">＋♂</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/1DcgczDzQPk?si=ebFfQP-bP-Qm7cSt')">
+<img src="Happy Halloween.jpg" alt="Happy Halloween">
+<div class="title">Happy Halloween</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/E4tIHBx7bqc?si=tCT19s4xL_VWHpcN')">
+<img src="Blessing.jpg" alt="Blessing">
+<div class="title">Blessing</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/WdHRGH1Qv70?si=wu6uOuviJck1HLJ_')">
+<img src="dorimi.jpg" alt="どりーみんチュチュ">
+<div class="title">どりーみんチュチュ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/wv2P0PLz9fw?si=cwzIozJTpCweGXRJ')">
+<img src="ozya.jpg" alt="おじゃま虫">
+<div class="title">おじゃま虫</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/4Ohpj2GDbRQ?si=nBFo90RDudpGvBsV')">
+<img src="bare.jpg" alt="バレリーコ">
+<div class="title">バレリーコ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/9DD6JvY06Ok?si=ZBDJoUflQAULligD')">
+<img src="suto.jpg" alt="ストリーミングハート">
+<div class="title">ストリーミングハート</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/UkkfI12kIK8?si=hJIV22lRLRokTe0k')">
+<img src="EveR ∞ LastinG ∞ NighT.jpg" alt="EveR ∞ LastinG ∞ NighT">
+<div class="title">EveR ∞ LastinG ∞ NighT</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/79N1O0lF0GY?si=OacEAOl5NmmGhKND')">
+<img src="yuki.jpg" alt="好き！雪！本気マジック">
+<div class="title">好き！雪！本気マジック</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/3bEikMqDd3M?si=Omqat2ZnD03MWapB')">
+<img src="doku.L" alt="毒占欲">
+<div class="title">毒占欲</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/LE1XskraNfI?si=xekSGmA7X2a7qIDU')">
+<img src="ha-to.jpg" alt="ハートアラモード">
+<div class="title">ハートアラモード</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/sFhKP57Nk1U?si=uSHBdE0JQUf6_LVF')">
+<img src="mosugara.jpg" alt="夜もすがら君想ふ">
+<div class="title">夜もすがら君想ふ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/vqiULULdvMA?si=BKneuInGM-Jkmxco')">
+<img src="bouken.jpg" alt="ぼうけんのしょがきえました！">
+<div class="title">ぼうけんのしょがきえました！</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/UBqPPkB_Ybc?si=uw2SChj3yBipdWyh')">
+<img src="iyahon.jpg" alt="イヤホンと蝉時雨">
+<div class="title">イヤホンと蝉時雨</div>
+</div>
+
+
+
+</div>
+
+<div class="year">2015年</div>
+
+<div class="gallery">
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/NTrm_idbhUk?si=nA9bbaEDeEYNCF34')">
+<img src="aisite.jpg" alt="愛して愛して愛して">
+<div class="title">愛して愛して愛して</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/RKtoreimcQ8?si=n8Fzinc9xJOThKcO')">
+<img src="Hand in Hand.jpg" alt="Hand in Hand">
+<div class="title">Hand in Hand</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/qzC-8hyleUU?si=zGJUpQsDJEfE1m6X')">
+<img src="main.jpg" alt="マインドブランド">
+<div class="title">マインドブランド</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/ihgrM14jrFY?si=NoY80lnTgRhg2K62')">
+<img src="aira.jpg" alt="アイラ">
+<div class="title">アイラ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/o2ovsJkqaiM?si=8yuwUkC20O3Aappn')">
+<img src="tyubyo.jpg" alt="厨病激発ボーイ">
+<div class="title">厨病激発ボーイ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/cqTgOnIMaJM?si=xWU36Ka2NddWwnCp')">
+<img src="umitagari.jpg" alt="うみたがり">
+<div class="title">うみたがり</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('')">
+<img src="kimino.jpg" alt="キミノヨゾラ哨戒班">
+<div class="title">キミノヨゾラ哨戒班</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/xzoShzMIlIM?si=sNEbF9FBH5MJ6Yan')">
+<img src="kuuso.jpg" alt="空奏列車">
+<div class="title">空奏列車</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/Qv_c0PO0cDQ?si=mAKTvNfiB6st2eK4')">
+<img src="tokino.jpg" alt="時ノ雨、最終戦争">
+<div class="title">時ノ雨、最終戦争</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/Jak2qiq_jJo?si=PiVs3CkzLc3aevnm')">
+<img src="meryu.jpg" alt="メリュー">
+<div class="title">メリュー</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/j-cQ97A0OPM?si=g0TVnpAT6m96E7aY')">
+<img src="sihatu.jpg" alt="始発とカフカ">
+<div class="title">始発とカフカ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/1lDs5iSV32Q?si=ceLtClA3eE86elqF')">
+<img src="aikyu.jpg" alt="愛及屋烏">
+<div class="title">愛及屋烏</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/ziGLZkisja4?si=r7y1ovkOQQlPzYT-')">
+<img src="kono.jpg" alt="このふざけた素晴らしき世界は、僕の為にある">
+<div class="title">このふざけた素晴らしき世界は、僕の為にある</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/6mCmR2gGgho?si=IpVEDkgFqZKvvMny')">
+<img src="sipa.jpg" alt="失敗作少女">
+<div class="title">失敗作少女</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/CPxxurEcGTw?si=WblFOJlqvzQK9Rfl')">
+<img src="do.jpg" alt="ドクター＝ファンクビート">
+<div class="title">ドクター＝ファンクビート</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm25698086')">
+<img src="tontin.jpg" alt="頓珍漢の宴">
+<div class="title">頓珍漢の宴</div>
+</div>
+
+</div>
+
+<div class="year">2016年</div>
+
+<div class="gallery">
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/8pGRdRhjX3o?si=IhTjSFKNd1g3IOtP')">
+<img src="mousou.jpg" alt="妄想感傷代償連盟">
+<div class="title">妄想感傷代償連盟</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/emrt46SRyYs?si=-Kf7l6InkibjwDQO')">
+<img src="DAYBREAK FRONTLINE.jpg" alt="DAYBREAK FRONTLINE">
+<div class="title">DAYBREAK FRONTLINE</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/TA5OFS_xX0c?si=vkZp7yVOaq_LMTzj')">
+<img src="syaruru.jpg" alt="シャルル">
+<div class="title">シャルル</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/_j0kfGNwIlw?si=yHnhNgNzOrRZbCVY')">
+<img src="tyubyo.jpg" alt="チュルリラ・チュルリラ・ダッダッダ！">
+<div class="title">チュルリラ・チュルリラ・ダッダッダ！</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/KushW6zvazM?si=oO4jajKcZOaGhCVJ')">
+<img src="go-su.jpg" alt="ゴーストルール">
+<div class="title">ゴーストルール</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/o1iz4L-5zkQ?si=Nkyoew0OPcCD-m_W')">
+<img src="kima.jpg" alt="気まぐれメルシィ">
+<div class="title">気まぐれメルシィ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/u5mHVUwDf_0?si=dU7Pz1yyeBtS7ah-')">
+<img src="dappo.jpg" alt="脱法ロック">
+<div class="title">脱法ロック</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/a_rrj1Xh5LI?si=8r7mkyMSUnnG8sH-')">
+<img src="hura.jpg" alt="フラジール">
+<div class="title">フラジール</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/jQmYZWjLwzw?si=7XYvDyVS0Pqd-tXP')">
+<img src="Alice in.jpg" alt="Alice in 冷凍庫">
+<div class="title">Alice in 冷凍庫</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/zLmopbS97aY?si=ppSjiPcYd4G50ZuS')">
+<img src="aruka.jpg" alt="アルカリレットウセイ">
+<div class="title">アルカリレットウセイ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/OuLZlZ18APQ?si=tb-6iuipaSFWGwF8')">
+<img src="39.jpg" alt="39みゅーじっく！">
+<div class="title">39みゅーじっく！</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/i2tFqnnWgdg?si=oZAfG3WON9l5dHxZ')">
+<img src="tyetye.jpg" alt="チェチェ・チェック・ワンツー！">
+<div class="title">チェチェ・チェック・ワンツー！</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/-E9Iz1mfi-E?si=ct_XO8JKu_kajFo9')">
+<img src="seikaku.jpg" alt="性格悪くてすみません。">
+<div class="title">性格悪くてすみません。</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/AOvvHI1_5mI?si=sjBGKzhERTYHUdD4')">
+<img src="tiga.jpg" alt="ちがう!!!">
+<div class="title">ちがう!!!</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/mYHJPb9PuUM?si=rtUA_Rcx24ZCLSbD')">
+<img src="sukinako.jpg" alt="すきなことだけでいいです">
+<div class="title">すきなことだけでいいです</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/GhRe642nPQs?si=PTHFpnlbIC9HjN9w')">
+<img src="nan.jpg" alt="難聴系男子が倒せない">
+<div class="title">難聴系男子が倒せない</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/lJB8ByV1nj4?si=nAEmdn-GTtZRMaSd')">
+<img src="odo.jpg" alt="おどりゃんせ">
+<div class="title">おどりゃんせ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/PPFH4h2YcKE?si=ebB_fE5WADPlFJ6h')">
+<img src="ran.jpg" alt="乱躁滅裂ガール">
+<div class="title">乱躁滅裂ガール</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/RqxnjgFj1HU?si=LrrPBIAPuR-PH6af')">
+<img src="riba.jpg" alt="リバーシブル・キャンペーン">
+<div class="title">リバーシブル・キャンペーン</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/FOvfM0fe-FE?si=0bRYaHHu1qProS9X')">
+<img src="raia.jpg" alt="ライアーダンス">
+<div class="title">ライアーダンス</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/CLywtSOj4NA?si=JJ66-0Dzw8ofivHD')">
+<img src="mawaru.jpg" alt="回る空うさぎ">
+<div class="title">回る空うさぎ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/g7dvpD_zlIM?si=kqBXQbpLBkysLe-b')">
+<img src="dance.jpg" alt="ダンスロボットダンス">
+<div class="title">ダンスロボットダンス</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://www.nicovideo.jp/watch/sm30301328')">
+<img src="dokuha.jpg" alt="ドクハク">
+<div class="title">ドクハク</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/2t1NMRse6aI?si=K7lUeynU0FEwIiny')">
+<img src="ei.jpg" alt="エイリアンエイリアン">
+<div class="title">エイリアンエイリアン</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/PLevj9bdRRA?si=EWh6xq-laNiHGXsd')">
+<img src="waru.jpg" alt="きみも悪い人でよかった">
+<div class="title">きみも悪い人でよかった</div>
+</div>
+
+
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/wF9D8NIUSM4?si=LzDwFaTQf5hrmkd3')">
+<img src="iede.jpg" alt="追跡！家出少女の実態！">
+<div class="title">追跡！家出少女の実態！</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/NT69Q8ny15c?si=dvrpIExZ6z-gy1k8')">
+<img src="sunao.jpg" alt="素直じゃなくてごめんなさい。">
+<div class="title">素直じゃなくてごめんなさい。</div>
+</div>
+
+
+
+</div>
+
+<div class="year">2017年</div>
+
+<div class="gallery">
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/AS4q9yaWJkI?si=D23O7q4ijDy1LbuD')">
+<img src="suna.jpg" alt="砂の惑星">
+<div class="title">砂の惑星</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/hxSg2Ioz3LM?si=v4ig6g1qRT8cJX8R')">
+<img src="hibana.jpg" alt="ヒバナ">
+<div class="title">ヒバナ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/P_CSdxSGfaA?si=0G9LdfnnH5x3p5J0')">
+<img src="anno.jpg" alt="アンノウン・マザーグース">
+<div class="title">アンノウン・マザーグース</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/SiqjnFhLq2U?si=znlWQ3Pj7RIiKeoJ')">
+<img src="aun.jpg" alt="阿吽のビーツ">
+<div class="title">阿吽のビーツ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/0HYm60Mjm0k?si=Baf2nxTp5gW72yUA')">
+<img src="inoti.jpg" alt="命に嫌われている。">
+<div class="title">命に嫌われている。</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/OVuYIMa5XBw?si=POZB40ux04qzw_oJ')">
+<img src="akane.jpg" alt="何でも言うことを聞いてくれるアカネチャン">
+<div class="title">何でも言うことを聞いてくれるアカネチャン</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/YDnZFwlZa1g?si=lmYqVHjzqPrkBqdE')">
+<img src="bakka.jpg" alt="命ばっかり">
+<div class="title">命ばっかり</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/hUaVxNUCbc4?si=eipeDUWNZwxSRKu0')">
+<img src="teikoku.jpg" alt="帝国少女">
+<div class="title">帝国少女</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/UHOJPOrxsjg?si=2K-6n8puxSQL69b1')">
+<img src="fi.jpg" alt="フィクサー">
+<div class="title">フィクサー</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/BwGpXK3W6tE?si=BV2oWcNx33n26kJu')">
+<img src="kaisei.jpg" alt="快晴">
+<div class="title">快晴</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/y8-6QPEes1k?si=Z9JllvGCor7prVoM')">
+<img src="iya.jpg" alt="い～やい～やい～や">
+<div class="title">い～やい～やい～や</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/Tu2xgl1303M?si=EC8Q8UvnM-7G8Tdc')">
+<img src="uminaosi.jpg" alt="うみなおし">
+<div class="title">うみなおし</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/rYymKe82y0c?si=BzPq9RNY3-gISI5r')">
+<img src="howa.jpg" alt="ホワイトハッピー">
+<div class="title">ホワイトハッピー</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/YFg48Ai1SSo?si=aWLMD2oCmAvuV59R')">
+<img src="da.jpg" alt="ダーリン">
+<div class="title">ダーリン</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/grdy6rLbQ-c?si=rBlIgaZ43NB42JsK')">
+<img src="haiboku.png" alt="拝啓ドッペルゲンガー">
+<div class="title">拝啓ドッペルゲンガー</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/bmkY2yc1K7Q?si=akd4DIBKd2JivTZH')">
+<img src="teo.jpg" alt="テオ">
+<div class="title">テオ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/FT91CrPPAqc?si=Y8QEcy4ZlM8SROI3')">
+<img src="po.jpg" alt="ポジティブ☆ダンスタイム">
+<div class="title">ポジティブ☆ダンスタイム</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/rkkZYzXsxPA?si=fUFHRMLodP-5VSJy')">
+<img src="puro.jpg" alt="プロトディスコ">
+<div class="title">プロトディスコ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/PdfdOhYVU40?si=g-RmCKuJsHJV9ea6')">
+<img src="ame.jpg" alt="雨とペトラ">
+<div class="title">雨とペトラ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/LtSNzPyo0lA?si=TrhLc-dH9fcsQcVS')">
+<img src="bokura.jpg" alt="ぼくらはみんな意味不明">
+<div class="title">ぼくらはみんな意味不明</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/Ja9qmYjXk6U?si=cdtYRSoad-H9eOs4')">
+<img src="tai.jpg" alt="太陽系デスコ">
+<div class="title">太陽系デスコ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/35iPH7jJLH0?si=b4LL3eYX7Rc7HS4t')">
+<img src="hana.jpg" alt="花が落ちたので、">
+<div class="title">花が落ちたので、</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/7awIdGqyr40?si=CrXDPJ-5EYXRFouQ')">
+<img src="su.webp" alt="スーサイドパレヱド">
+<div class="title">スーサイドパレヱド</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/4oCuGeHWzCo?si=5FC2jPjFqsjpLFSp')">
+<img src="remi.jpg" alt="レミングミング">
+<div class="title">レミングミング</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/-dk9wJTLCGo?si=1W86SzKwum7NtXYH')">
+<img src="ada.jpg" alt="アダルトチルドレン">
+<div class="title">アダルトチルドレン</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/wCj04kwAFX8?si=6kfX5tnjWvsh0jLV')">
+<img src="sui.jpg" alt="彗星ハネムーン">
+<div class="title">彗星ハネムーン</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/8uV_czuhdjc?si=iaFSRVSNX_P6818u')">
+<img src="akuyaku.jpg" alt="悪役にキスシーンを">
+<div class="title">悪役にキスシーンを</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/X5kQR92kYn0?si=qYNnXuybx_1VKhVk')">
+<img src="kiminoka.jpg" alt="君の神様になりたい。">
+<div class="title">君の神様になりたい。</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/G1tPEE_GNvA?si=d6LhFPYxozzaI7bD')">
+<img src="kato.jpg" alt="カトラリー">
+<div class="title">カトラリー</div>
+</div>
+
+
+
+</div>
+
+<div class="year">2018年</div>
+
+<div class="gallery">
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/Xg-qfsKN2_E?si=cac4EIdSVgae4GEF')">
+<img src="roki.jpg" alt="ロキ">
+<div class="title">ロキ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/oRJBwaZ59fQ?si=XivY9uvhoYKcFRIT')">
+<img src="benomu.jpg" alt="ベノム">
+<div class="title">ベノム</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/DeKLpgzh-qQ?si=4kt4u5OMTI1IH8dQ')">
+<img src="anbu.jpg" alt="ロストアンブレラ">
+<div class="title">ロストアンブレラ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/hZFBTnzKa54?si=I3cUV6Po-YkroUqq')">
+<img src="darekano.jpg" alt="だれかの心臓になれたなら">
+<div class="title">だれかの心臓になれたなら</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/oEkGC2HV7rc?si=isyIi60JkgMfBUcL')">
+<img src="retu.webp" alt="劣等上等">
+<div class="title">劣等上等</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/JW3N-HvU0MA?si=Ud5N7jiDwWELG8b2')">
+<img src="rei.jpg" alt="少女レイ">
+<div class="title">少女レイ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/3Yp-oxOGdHA?si=cpAcNRJcdLjH28EH')">
+<img src="su-pa.jpg" alt="スーパーヒーロー">
+<div class="title">スーパーヒーロー</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/QprnVxCveSY?si=ddqjoZqpGABJmUPW')">
+<img src="ego.jpg" alt="エゴイスト">
+<div class="title">エゴイスト</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/I15sK7dNMOM?si=d1kku8Ewi6y0Myhl')">
+<img src="ana.jpg" alt="あなぐらぐらし">
+<div class="title">あなぐらぐらし</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/WptXk39wiIQ?si=yV-C5HwuHQnS9JX0')">
+<img src="aikoto.webp" alt="愛言葉Ⅲ">
+<div class="title">愛言葉Ⅲ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/5kIeUb5AE4s?si=zi01J8RicVJK7R39')">
+<img src="bokaro.jpg" alt="ぼかろころしあむ">
+<div class="title">ぼかろころしあむ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/q2QfH1JqtkY?si=dN8xs9lLjfGPOiQU')">
+<img src="adi.jpg" alt="アディショナルメモリー">
+<div class="title">アディショナルメモリー</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/tQWMArNo9F0?si=hBUi8_8inxYj9Dan')">
+<img src="sya.webp" alt="紗痲">
+<div class="title">紗痲</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/ZEy36W1xX8c?si=9pu1Rb7IOdPHkjep')">
+<img src="melute.jpg" alt="メルティランドナイトメア">
+<div class="title">メルティランドナイトメア</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/M92c6pl10u0?si=h8Yzon86Cd78skpn')">
+<img src=".jpg" alt="おばけのウケねらい">
+<div class="title">おばけのウケねらい</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/iKdHiLzBf34?si=IJ-bxamoYmp2LLZQ')">
+<img src="baio.jpg" alt="バイオレンストリガー">
+<div class="title">バイオレンストリガー</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/kffrKgAN7tI?si=8bdVNBnwqxr-XN81')">
+<img src="meriba.jpg" alt="メリーバッドエンド">
+<div class="title">メリーバッドエンド</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/sB1e_0jkvE8?si=R8SdKWZYEJpdhBga')">
+<img src="tpkei.jpg" alt="撥条少女時計">
+<div class="title">撥条少女時計</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/qtuX4cHk-vE?si=UzgDKqmQJ4kvwTBk')">
+<img src="masyu.jpg" alt="マシュマリー">
+<div class="title">マシュマリー</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/vzm_w-5y4-o?si=_BW5ijDCq5oVcXfS')">
+<img src="flos.jpg" alt="flos">
+<div class="title">flos</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/wM4phGebR4o?si=xTo193Pq2RoqXTw3')">
+<img src="zange.jpg" alt="懺悔参り">
+<div class="title"懺悔参り></div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/XSLhsjepelI?si=v6b3CdqQQazXSuFo')">
+<img src="g.jpg" alt="グリーンライツ・セレナーデ">
+<div class="title">グリーンライツ・セレナーデ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/GTgMgxtl0Eg?si=VdwHJFYAacDBN1EO')">
+<img src="zyama.jpg" alt="邪魔">
+<div class="title">邪魔</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/uoL_7cX0pCQ?si=oCnRbY9tYraXk0MT')">
+<img src="syo.jpg" alt="贖罪">
+<div class="title">贖罪</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/AsMGJaKyX-E?si=6grOCOaIbsbUB0oR')">
+<img src="taise.jpg" alt="大切な人たちへ">
+<div class="title">大切な人たちへ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/_xXenYRkbKs?si=6YneHs7rYm_E-WoY')">
+<img src="sindesi.jpg" alt="死んでしまったのだろうか">
+<div class="title">死んでしまったのだろうか</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/N4MEB95GRe0?si=2pM724Xr8X3DjQl8')">
+<img src="han.jpg" alt="ハングリーニコル">
+<div class="title">ハングリーニコル</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/SXC2wO1XdMI?si=1m0l8Apy4e28rpMl')">
+<img src="gara.webp" alt="ガランド">
+<div class="title">ガランド</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/C7h6-jU1DCA?si=a9MGUqf2_pPYXBgG')">
+<img src="batu.jpg" alt="抜錨">
+<div class="title">抜錨</div>
+</div>
+
+</div>
+
+<div class="year">2019年</div>
+
+<div class="gallery">
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/Hmc41Zsb2Ns?si=wBVnFHDrusk9vxo4')">
+<img src="gpki.jpg" alt="ゴキブリの味">
+<div class="title">ゴキブリの味</div>
+</div>
+
+    <div class="item"
+onclick="openYoutube('https://youtu.be/Y0EcKR05Ac4?si=P8lmkRGqRGHS6dj7')">
+<img src="mazi.jpg" alt="マジカルドクター">
+<div class="title">マジカルドクター</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/7zwCIz-Ohn4?si=KHNmaTGEfApx85ZC')">
+<img src="otome.jpg" alt="乙女解剖">
+<div class="title">乙女解剖</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/ERo-sPa1a5g?si=95CYUPxbmRIEb4wg')">
+<img src="Gimme×Gimme.jpg" alt="Gimme×Gimme">
+<div class="title">Gimme×Gimme</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/XCyKJD6uQyg?si=O59fC5BPIWKqlsDR')">
+<img src="bita.jpg" alt="ビターチョコデコレーション">
+<div class="title">ビターチョコデコレーション</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/XfUao0_54yM?si=9ntcz3Na6M940jdS')">
+<img src="ruma.jpg" alt="ルマ">
+<div class="title">ルマ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/pUH9vCsvq08?si=5G7QlEg7uyqVv3mU')">
+<img src="syun.jpg" alt="春嵐">
+<div class="title">春嵐</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/eZ0E3Rkv0NA?si=-BcZ-829nU3yaS39')">
+<img src="last.jpg" alt="ラストリゾート">
+<div class="title">ラストリゾート</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/E1PGiyRjqkU?si=Tx-RKof3BQW6ZV1J')">
+<img src="zyan.jpg" alt="ジャンキーナイトタウンオーケストラ">
+<div class="title">ジャンキーナイトタウンオーケストラ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/uFRPeiAEO0M?si=Lnjjj8pANd6JKs_3')">
+<img src="and.jpg" alt="アンドロイドガール">
+<div class="title">アンドロイドガール</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/xfR0iTh8PSI?si=F_Snd4pIv_3CLZ4M')">
+<img src="anata.jpg" alt="あなたの夜が明けるまで">
+<div class="title">あなたの夜が明けるまで</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/7Y9sJvLI3Po?si=hl8JE19CEY69QYk9')">
+<img src="zye.jpg" alt="ジェヘナ">
+<div class="title">ジェヘナ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/hL75gQUcu0A?si=1A5Cydk23n8XZnDy')">
+<img src="karakara.jpg" alt="カラカラカラのカラ">
+<div class="title">カラカラカラのカラ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/oUevY6uH4Qg?si=73fGBmwVIiN1GmTR')">
+<img src="tora.jpg" alt="トラフィック・ジャム">
+<div class="title">トラフィック・ジャム</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/MnJq5kSn-GY?si=6TNdn2Ns9347Edjk')">
+<img src="sen.jpg" alt="アルティメットセンパイ">
+<div class="title">アルティメットセンパイ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/Uc4NBh_kCL4?si=MzCOPygfLWbAJx5M')">
+<img src="go.webp" alt="ゴー・トゥ・大都会">
+<div class="title">ゴー・トゥ・大都会</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/GSpwTvYgFrM?si=YH7TvIf_B6Whrwum')">
+<img src="naizo.jpg" alt="内臓ありますか">
+<div class="title">内臓ありますか</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/OVwCr2MESfo?si=MI79YW9ZgHLGFD26')">
+<img src="IMAWANOKIWA.jpg" alt="IMAWANOKIWA">
+<div class="title">IMAWANOKIWA</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/DlIREQyaxu8?si=NL3Z6x_8lHji4qYE')">
+<img src="oruta.jpg" alt="オルターエゴ">
+<div class="title">オルターエゴ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/JCZCz0XQfRk?si=_5Oa_lUZs4Zd_KIj')">
+<img src="poppin.jpg" alt="ポッピンキャンディ☆フィーバー！">
+<div class="title">ポッピンキャンディ☆フィーバー！</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/nj82E1_70sQ?si=cjzSyFjxhK4cp8zm')">
+<img src="suku.jpg" alt="スクランブル交際">
+<div class="title">スクランブル交際</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/LCOItseOsFE?si=PaRkj4HkOR5Ps4eR')">
+<img src="siu.jpg" alt="しう">
+<div class="title">しう</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/iBFa98VMh2A?si=iAKmPPhuiHDMC1Zk')">
+<img src="o-to.jpg" alt="オートファジー">
+<div class="title">オートファジー</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/lWl5viCqGSc?si=fU5cuWU3lE2ETRrL')">
+<img src="yu.jpg" alt="幽霊東京">
+<div class="title">幽霊東京</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/bmPoZ1BPcNY?si=FJYFdtlQTETrMPZG')">
+<img src="kiru.jpg" alt="キルマー">
+<div class="title">キルマー</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/c-SOJsITLLs?si=X5hRuFY_F7hpQHEA')">
+<img src="dame.jpg" alt="だめにんげんだ">
+<div class="title">だめにんげんだ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/JAdcCzeD0qk?si=uu7O51OW8rZvCVAQ')">
+<img src="DOGMA.jpg" alt="DOGMA">
+<div class="title">DOGMA</div>
+</div>
+
+
+
+</div>
+
+<div class="year">2020年</div>
+
+<div class="gallery">
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/cm-l2h6GB8Q?si=_z__PwjwIUF6ORw4')">
+<img src="KING.jpg" alt="KING">
+<div class="title">KING</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/UnIhRpIT7nc?si=Yw8M1oPpfF-IiG-H')">
+<img src="ragu.jpg" alt="ラグトレイン">
+<div class="title">ラグトレイン</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/Rkrm5foi188?si=4Hkk50qR_eL5AsBv')">
+<img src="da-ri.jpg" alt="ダーリンダンス">
+<div class="title">ダーリンダンス</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/dHXC_ahjtEE?si=8IVQR5b4rDfNIBUo')">
+<img src="gubba.jpg" alt="グッバイ宣言">
+<div class="title">グッバイ宣言</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/i-DZukWFR64?si=4HcK8g-wKZlv7PB7')">
+<img src="terekya.jpg" alt="テレキャスタービーボーイ">
+<div class="title">テレキャスタービーボーイ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/wp9Z2wZ-2bs?si=MoWjd709o1t9WRJw')">
+<img src="bokka.jpg" alt="ボッカデラベリ">
+<div class="title">ボッカデラベリ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/eEuIHatfgkE?si=focwYJ1ynVQ30CwB')">
+<img src="ruruka.jpg" alt="アイ情劣等生">
+<div class="title">アイ情劣等生</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/L13gCEZJVRU?si=qwB8TqAraCTcdk5K')">
+<img src="Henceforth .jpg" alt="Henceforth ">
+<div class="title">Henceforth </div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/EP_3-Qkrq60?si=Z5tJJeuyLek_u3Rt')">
+<img src="kodoku.jpg" alt="孤独の宗教">
+<div class="title">孤独の宗教</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/p9FJXfGHtDA?si=6tjvG6uJX96w3GKs')">
+<img src="v.jpg" alt="ヴィラン">
+<div class="title">ヴィラン</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/1s8NNPgdl5g?si=evBe5-U9RibilTSc')">
+<img src="sekai.jpg" alt="セカイはまだ始まってすらいない">
+<div class="title">セカイはまだ始まってすらいない</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/_oLA_7lM7aY?si=tafdTjTLEeHdkpQb')">
+<img src="mosu.jpg" alt="萌す心を">
+<div class="title">萌す心を</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/NQ-U3udExnA?si=nD9fZ1z0VX_dpf1t')">
+<img src="gan.jpg" alt="雁首、揃えてご機嫌よう ">
+<div class="title">雁首、揃えてご機嫌よう </div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/-75h7CRZYNs?si=CI3KDZ2fp1WHPRS8')">
+<img src="titi.jpg" alt="チチンプイプイ">
+<div class="title">チチンプイプイ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/L9Amln_KTxg?si=ns9NDZt2klQQduD-')">
+<img src="anti.jpg" alt="アンチジョーカー">
+<div class="title">アンチジョーカー</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/Dun11cIEo9s?si=ZWNTD-1pYEYcWZ5z')">
+<img src="potato.jpg" alt="potatoになっていく">
+<div class="title">potatoになっていく</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/D7HH-3wkCJc?si=lC7txSUi_Xp4Xf1C')">
+<img src="neo.jpg" alt="ネオネオン">
+<div class="title">ネオネオン</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/1Esz9ONM9X8?si=9pRvnL2Td8NaE4zs')">
+<img src="love.jpg" alt="ラブカ？">
+<div class="title">ラブカ？</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/ygY2qObZv24?si=St2pNs-mbebFp-Ol')">
+<img src="sare.jpg" alt="愛されなくても君がいる">
+<div class="title">愛されなくても君がいる</div>
+</div>
+
+
+
+
+
+</div>
+
+<div class="year">2021年</div>
+
+<div class="gallery">
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/e1xCOsgWG0M?si=KYrfwGnKvd94Z8BA')">
+<img src="van.jpg" alt="ヴァンパイア">
+<div class="title">ヴァンパイア</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/EEbWRjavSVw?si=jJumjWgzCxxIBrpH')">
+<img src="ci.jpg" alt="シネマ">
+<div class="title">シネマ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/3sEptl-psU0?si=Rva6LukkE0qFCLK4')">
+<img src="rou.webp" alt="ロウワー">
+<div class="title">ロウワー</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/oFmup8lxUHw?si=9bFRyWDEjo8WXJnb')">
+<img src="cu.jpg" alt="キュートなカノジョ">
+<div class="title">キュートなカノジョ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/8r-_K32fsSU?si=N720yIRew3ONb2Jl')">
+<img src="karesi.jpg" alt="カレシのジュード">
+<div class="title">カレシのジュード</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/DhbC9mrwKdc?si=rXsuQrlU_seQdxYJ')">
+<img src="n.jpg" alt="んっあっあっ。">
+<div class="title">んっあっあっ。</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/jMKPYg0uhCI?si=-t5V237PVz8Asjtw')">
+<img src="ma-.webp" alt="マーシャル・マキシマイザー">
+<div class="title">マーシャル・マキシマイザー</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/rkaNKAvksDE?si=mUWo1myWNE_gZg0D')">
+<img src="Surges.jpg" alt="Surges">
+<div class="title">Surges</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/lFJA9muTUDM?si=hKlyg64X_zUaNyqV')">
+<img src="tensi.jpg" alt="天使のクローバー">
+<div class="title">天使のクローバー</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/vLigCJOcHOE?si=SI4t84HGtiSlWUKk')">
+<img src="isse.jpg" alt="いっせーのーで">
+<div class="title">いっせーのーで</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/Yd8P4K7pQ6A?si=ebt6RF6Vpb-fxq-z')">
+<img src="demone.jpg" alt="でもね">
+<div class="title">でもね</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/HtBqK6xsQ9k?si=8r9dr3QeUiVXKXTR')">
+<img src="animal.jpg" alt="アニマル">
+<div class="title">アニマル</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/YznQjwMjDKw?si=2LJa8pEe6JlbFBwE')">
+<img src="eri.jpg" alt="エリート">
+<div class="title">エリート</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/9QLT1Aw_45s?si=loo4qXYVhqCtwuj1')">
+<img src="pho.webp" alt="フォニイ">
+<div class="title">フォニイ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/w8yweCungCE?si=iqmY5su8OnFaKub8')">
+<img src="nenene.jpg" alt="ねぇねぇねぇ。 ">
+<div class="title">ねぇねぇねぇ。 </div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/pLaPtcmn4Bs?si=wd2zZ2QuQycIX9S2')">
+<img src="waga.jpg" alt="我儘姫">
+<div class="title">我儘姫</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/dBQg24mx45Y?si=qkeqeMrUnzR-OLP7')">
+<img src="tondemo.jpg" alt="トンデモワンダーズ">
+<div class="title">トンデモワンダーズ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/2b1IexhKPz4?si=eR5YaRDO55HBUk9I')">
+<img src="kyu.jpg" alt="きゅうくらりん">
+<div class="title">きゅうくらりん</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/gfdzYIPjhBU?si=p1FIHklQVOdLDOsz')">
+<img src="sou.jpg" alt="そうだった！！ ">
+<div class="title">そうだった！！ </div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/91R2hdV_-aQ?si=PoT0MnMeQ4li36bu')">
+<img src="ikiru.jpg" alt="生きる">
+<div class="title">生きる</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/EHBFKhLUVig?si=UgajVZ3fEDqysscE')">
+<img src="kamippo.jpg" alt="神っぽいな">
+<div class="title">神っぽいな</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/TNb9CVZ6Gk4?si=ocSn2eo9B7jq3yn8')">
+<img src="hatu.jpg" alt="ハツコイソウ">
+<div class="title">ハツコイソウ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/sSHkXxADtaE?si=REBjI8bA1i2hhs74')">
+<img src="EYE.jpg" alt="EYE">
+<div class="title">EYE</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/KgTa2acX2wk?si=e8B_gzBRyjh7MHGS')">
+<img src="nanse.jpg" alt="ナンセコンナセンス">
+<div class="title">ナンセコンナセンス</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/_FhgjDhBAWI?si=zlFYFIIEkuWB2ayz')">
+<img src="dokudoku.jpg" alt="孤独毒毒 ">
+<div class="title">孤独毒毒 </div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/dgS6HvEohsw?si=OuMKU4PfRbVHCwhL')">
+<img src="envy.jpg" alt="エンヴィーベイビー">
+<div class="title">エンヴィーベイビー</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/POy0RvJeaqM?si=S893mzNE9xBiJTpQ')">
+<img src="syanty.jpg" alt="シャンティ">
+<div class="title">シャンティ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/lw7pcm1W5tw?si=h71a38wz5lfvIro_')">
+<img src="nonbu.jpg" alt="ノンブレス・オブリージュ">
+<div class="title">ノンブレス・オブリージュ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/GiDo4s1x9Mw?si=yYdEniKkWkhnxE-f')">
+<img src="tabun.jpg" alt="たぶん終わり">
+<div class="title">たぶん終わり</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/6U-5xAh3cKg?si=CLteFXEVKXNbFZJy')">
+<img src="kame.jpg" alt="カメレオン">
+<div class="title">カメレオン</div>
+</div>
+
+
+
+</div>
+
+<div class="year">2022年</div>
+
+<div class="gallery">
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/E_PfhNftyh4?si=Ezz9lAzAG2N7leaT')">
+<img src="ziren.webp" alt="ジレンマ">
+<div class="title">ジレンマ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/_fmKpimgQq8?si=nPWlTJMb_b_ea1k-')">
+<img src="sayo.jpg" alt="さよならプリンセス">
+<div class="title">さよならプリンセス</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/M9moY0hEJRE?si=LQiuAbMNMrIsxp4d')">
+<img src="aiden.jpg" alt="アイデンティティ">
+<div class="title">アイデンティティ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/NFT6GMPeYJI?si=5rB6nBhf4qubeOhy')">
+<img src="yami.webp" alt="ヤミナベ!!!!">
+<div class="title">ヤミナベ!!!!</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/agcoHM2CJ3s?si=V65oAF5SmzQlz-ns')">
+<img src="parasa.jpg" alt="パラサイト">
+<div class="title">パラサイト</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/UOcKAfS1x1o?si=kc-qIBnRr9M4_4yk')">
+<img src="bani.jpg" alt="バニー">
+<div class="title">バニー</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/LYWP8HtgeLQ?si=S8ove6eFNj79dozM')">
+<img src="tense.jpg" alt="転生林檎">
+<div class="title">転生林檎</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/vB8sxY_PJ_w?si=3eIhthnUAhEbvmJL')">
+<img src="yoi.jpg" alt="酔いどれ知らず">
+<div class="title">酔いどれ知らず</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/8JXiXt0D6tw?si=b7_TNSY0myFjNfbM')">
+<img src="Who.jpg" alt="Who?">
+<div class="title">Who?</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/4v3x9zFRy-A?si=zKkeLo1_k7TdticP')">
+<img src="amatt.jpg" alt="甘ったる">
+<div class="title">甘ったる</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/f6TytcA47rI?si=2_papyjX2iA3MnIz')">
+<img src="kuu.jpg" alt="くうになる">
+<div class="title">くうになる</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/PubukElqUJw?si=6wbfaJs5NcTLdNVe')">
+<img src="isekai.jpg" alt="異星にいこうね">
+<div class="title">異星にいこうね</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/-H2PCK7DJsQ?si=vOQSB_wE9aI0K9_G')">
+<img src="sara.jpg" alt="サラマンダー ">
+<div class="title">サラマンダー </div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/QYpL88jiWFs?si=1C5WvEpgHaLvHAMn')">
+<img src="i.jpg" alt="Iなんです">
+<div class="title">Iなんです</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/BPh4m2VnfNo?si=TepbfiP6evhus-Mc')">
+<img src="toriko.jpg" alt="トリコロージュ">
+<div class="title">トリコロージュ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/5XehRIb81k8?si=f9O7eb94UDO8ysSl')">
+<img src="kuzu.jpg" alt="ド屑">
+<div class="title">ド屑</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/T2kS1gAbxhc?si=5oMdOjOLVXJgdH1t')">
+<img src="mahou.jpg" alt="魔法少女とチョコレゐト">
+<div class="title">魔法少女とチョコレゐト</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/_xoUZhKEebQ?si=okh_UzQlbyR5dJii')">
+<img src="karada.jpg" alt="身体は正直だって言ってんの">
+<div class="title">身体は正直だって言ってんの</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/K8Mdjq5sxgY?si=RU35ulACVoIUU9nP')">
+<img src="MOTTAI .jpg" alt="MOTTAI ">
+<div class="title">MOTTAI </div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/b2NTglk9tvI?si=T17EZAeeUjXWoA6Q')">
+<img src="netu.jpg" alt="熱異常">
+<div class="title">熱異常</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/mq88yUFdVng?si=CSEfCDSgzQAbj1xa')">
+<img src="ravy.jpg" alt="ラヴィ">
+<div class="title">ラヴィ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/9O2VyUM5MlQ?si=Pr_05tMmgY5nXdPD')">
+<img src="mani.jpg" alt="まにまに">
+<div class="title">まにまに</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/FkO8ub83wss?si=PAJCUGIaMVZKIr5k')">
+<img src="bagu.webp" alt="バグ">
+<div class="title">バグ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/KFCaSz_yYCM?si=Xa_uvHvu38iE7VNj')">
+<img src="QUEEN.jpg" alt="QUEEN">
+<div class="title">QUEEN</div>
+</div>
+
+
+
+
+
+
+</div>
+
+<div class="year">2023年</div>
+
+<div class="gallery">
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/D6DVTLvOupE?si=iiZMst7f_6GdHxSW')">
+<img src="o-ru.webp" alt="強風オールバック">
+<div class="title">強風オールバック</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/yiqEEL7ac6M?si=YLASAlwUCliyDGbO')">
+<img src="M.jpg" alt="匿名M">
+<div class="title">匿名M</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/FSXsAt7z_RU?si=A1gI8FwOL9r0PvCj')">
+<img src="yasi.webp" alt="寝起きヤシの木">
+<div class="title">寝起きヤシの木</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/HTxwOxFt5d4?si=3khfF0bofQ028fLA')">
+<img src="mania.jpg" alt="人マニア">
+<div class="title">人マニア</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/eSW2LVbPThw?si=7jD0ugsFxOnVT6jp')">
+<img src="ho-ru.jpg" alt="ラビットホール">
+<div class="title">ラビットホール</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/lMEt3RdqB9Y?si=VrDK12EnDNHNNQqu')">
+<img src="devi.jpg" alt="デビルじゃないもん">
+<div class="title">デビルじゃないもん</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/sAUdWpemfGw?si=RY7PtSsxmBYqVfYU')">
+<img src="momo.jpg" alt="ももいろの鍵">
+<div class="title">ももいろの鍵</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/q90SFMi8aUg?si=Jb50_r8XRY3XZ6T8')">
+<img src="zamu.jpg" alt="ザムザ">
+<div class="title">ザムザ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/vY8iwpN3GXQ?si=uisV1fnv0RGynALd')">
+<img src="noda.jpg" alt="のだ">
+<div class="title">のだ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/zxYdPypVQvQ?si=ZwtebQ36V3WjL2Yz')">
+<img src=oma.jpg" alt="お呪い">
+<div class="title">お呪い</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/1Swg-aBO9eY?si=cpQ9Vn5kVorqCIkI')">
+<img src="kon.jpg" alt="混沌ブギ">
+<div class="title">混沌ブギ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/R_g0M5Zmqhg?si=P9hpeSmDkiCCchaH')">
+<img src="aisite.jpg" alt="あいしていたのに">
+<div class="title">あいしていたのに</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/JV--KBO5bgM?si=TnP4VSWKh4zHfoUY')">
+<img src="suisi.jpg" alt="水死体は恋したい">
+<div class="title">水死体は恋したい</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/pRjWRV1Bhfs?si=9e0ozoZAHCRhjxEx')">
+<img src="baka.jpg" alt="バカ通信">
+<div class="title">バカ通信</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/36LsS8T5RHE?si=siYx5vFOxCTKbAfH')">
+<img src="pasu.jpg" alt="妄想アスパルテーム">
+<div class="title">妄想アスパルテーム</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/ST_AJmY_Tcc?si=YMAANRHZVzIB8Xk-')">
+<img src="puropo.jpg" alt="プロポーズ">
+<div class="title">プロポーズ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/Yt5-aNnDvBE?si=QrYhonlfkCh9gYH7')">
+<img src="92.jpg" alt="エンゼル92">
+<div class="title">エンゼル92</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('')">
+<img src=".jpg" alt="">
+<div class="title"></div>
+</div>
+
+<div class="item"
+onclick="openYoutube('')">
+<img src=".jpg" alt="">
+<div class="title"></div>
+</div>
+
+<div class="item"
+onclick="openYoutube('')">
+<img src=".jpg" alt="">
+<div class="title"></div>
+</div>
+
+<div class="item"
+onclick="openYoutube('')">
+<img src=".jpg" alt="">
+<div class="title"></div>
+</div>
+
+<div class="item"
+onclick="openYoutube('')">
+<img src=".jpg" alt="">
+<div class="title"></div>
+</div>
+
+<div class="item"
+onclick="openYoutube('')">
+<img src=".jpg" alt="">
+<div class="title"></div>
+</div>
+
+
+
+</div>
+
+<div class="year">2024年</div>
+
+<div class="gallery">
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/19y8YTbvri8?si=rt-d1Op4a08WF5m-')">
+<img src="mezu.jpg" alt="メズマライザー">
+<div class="title">メズマライザー</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/F38EuG2dAyM?si=Hwj_f3slaJuXHMkd')">
+<img src="igaku.jpg" alt="イガク">
+<div class="title">イガク</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/Soy4jGPHr3g?si=mqH_zzxLUPs8i3is')">
+<img src="tetorisu.jpg" alt="テトリス">
+<div class="title">テトリス</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/fGizrX4JjPg?si=9OUTZW8gH6eeXXIH')">
+<img src="binomi.jpg" alt="ビノミ">
+<div class="title">ビノミ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/Ljr2wMSBHqU?si=JoKGwQTT2MnKvbss')">
+<img src="uno.jpg" alt="み　む　かｩ　わ　ナ　イ　ス　ト　ラ　イ">
+<div class="title">み　む　かｩ　わ　ナ　イ　ス　ト　ラ　イ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/kbNdx0yqbZE?si=zdocYQTvA7mQO1Io')">
+<img src="moni.jpg" alt="モニタリング">
+<div class="title">モニタリング</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/c5_0NPftdlY?si=YPwBOdjKs0HZPEDB')">
+<img src="seki.jpg" alt="㋰責任集合体">
+<div class="title">㋰責任集合体</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/9xbT8OZcDJQ?si=KL1pRtert6R-fxSY')">
+<img src="Dec..jpg" alt="Dec.">
+<div class="title">Dec.</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/TFpizvPDbec?si=BWUyPc_1Xe-N_qFB')">
+<img src="meromero.jpg" alt="メロメロイド">
+<div class="title">メロメロイド</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/easT0DZDAs8?si=GKrctAvPi8FrTXeX')">
+<img src="rapu.jpg" alt="ラプラスショコラ">
+<div class="title"ラプラスショコラ></div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/A1Ptl0qs-pE?si=Q_N5JaCK7z25DVct')">
+<img src="uso.jpg" alt="嘘ミーム">
+<div class="title">嘘ミーム</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/3GzRDW3hZ1k?si=JEF3CjpaW19lkKT6')">
+<img src="hao.jpg" alt="ハオ">
+<div class="title">ハオ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('')">
+<img src=".jpg" alt="">
+<div class="title"></div>
+</div>
+
+<div class="item"
+onclick="openYoutube('')">
+<img src=".jpg" alt="">
+<div class="title"></div>
+</div>
+
+<div class="item"
+onclick="openYoutube('')">
+<img src=".jpg" alt="">
+<div class="title"></div>
+</div>
+
+<div class="item"
+onclick="openYoutube('')">
+<img src=".jpg" alt="">
+<div class="title"></div>
+</div>
+
+</div>
+
+<div class="year">2025年</div>
+
+<div class="gallery">
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/klIxS5o65C4?si=HeJMMnroF9rKdZtq')">
+<img src="dai.jpg" alt="ダイダイダイダイダイキライ">
+<div class="title">ダイダイダイダイダイキライ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/YZG-FW_4IYA?si=OjLhsVSytqmV30ds')">
+<img src="T.jpg" alt="T氏の話を信じるな">
+<div class="title">T氏の話を信じるな</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/c56TpxfO9q0?si=Xo9xHY5E4iK9n96u')">
+<img src="tere.jpg" alt="テレパシ">
+<div class="title">テレパシ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/BI9Ue6JwJic?si=iNE6_cx6SX3dAQNh')">
+<img src="sakura.jpg" alt="チェリーポップ">
+<div class="title">チェリーポップ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/3iUgKH8c7p4?si=IkoX5M23hMxX7_Yw')">
+<img src="rinne.jpg" alt="いますぐ輪廻">
+<div class="title">いますぐ輪廻</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/icBDYkfxpMs?si=T4jpcKNMTtCHHMVj')">
+<img src="ru-pu.jpg" alt="ループザルーム">
+<div class="title">ループザルーム</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/sV2H712ldOI?si=l5940vbMYfMSAPZA')">
+<img src="Confessions of a Rotten Girl.jpg" alt="Confessions of a Rotten Girl">
+<div class="title">Confessions of a Rotten Girl</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/Dz5rALpx06M?si=AUa7OZ_rEOCrsvxI')">
+<img src="baumu.jpg" alt="バゥムクゥヘン・エンドロゥル">
+<div class="title">バゥムクゥヘン・エンドロゥル</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/D50L4EeBHOs?si=NPy7aY7R7nnxdjQN')">
+<img src="akage.jpg" alt="AKAGE [赤毛]">
+<div class="title">AKAGE [赤毛]</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/kqj7b59D85Y?si=AEYaNgf2wpZVCuGS')">
+<img src="zako.jpg" alt="雑魚">
+<div class="title">雑魚</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('')">
+<img src=".jpg" alt="">
+<div class="title"></div>
+</div>
+
+
+
+</div>
+
+<div class="year">2026年</div>
+
+<div class="gallery">
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/T24rF_x0TmQ?si=Wi2Gn5jUWR2qKfyW')">
+<img src="yara.jpg" alt="ヤラララ">
+<div class="title">ヤラララ</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/UsjsYMo3O1Q?si=yPvoYZRciHm1cfHo')">
+<img src="bure.webp" alt="ブレインロット">
+<div class="title">ブレインロット</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/CgxOQjYBmss?si=rfJc5nGD-0qXOUj0')">
+<img src="daru.jpg" alt="ダダダダダル">
+<div class="title">ダダダダダル</div>
+</div>
+
+<div class="item"
+onclick="openYoutube('https://youtu.be/ngVPf_NMLkw?si=FnrbUCBKfyD2psrG')">
+<img src="mati.jpg" alt="マチアプリンセス">
+<div class="title">マチアプリンセス</div>
+</div>
+
+
+
+</div>
+
+</div>
+
+<!-- 歴史 -->
+<div class="page" id="history">
+
+<button onclick="backHome()">←戻る</button>
+
+<h1>1.VOCALOIDとは何か</h1>
+
+<p>
+VOCALOID(ボーカロイド)とは、ヤマハ株式会社によって開発された歌声合成技術およびのソフトウェアである。人間の声をもとにデータベース化された音声を組み合わせることで、誰でも楽曲にボーカルを付けることができるのが特徴である。
+2004年に初代VOCALOIDが登場し、その後「MEIKO」、「KAITO」、「初音ミク」などのキャラクター性を持つ音声ライブラリの登場によって、単なる音楽ソフトから「文化」へと発展した。
+<br>
+例 → 初音ミク、MEIKO、KAITO、鏡音リン、鏡音レン etc..<br>
+</p>
+
+<h1>2.VOCALOIDが生まれた背景</h1>
+
+<p>
+従来、音楽制作には歌い手が必要であり、作曲者と歌い手は分業が基本だった。しかし、VOCALOIDの登場により、作曲・作詞・歌唱のすべてを一人で完結できるようになった。
+特にインターネット動画サイト(ニコニコ動画・YouTube)の普及と重なったことで、個人が制作した楽曲をすぐに発表できる環境が整い、爆発的に広まった。
+</p>
+
+<h1>3.魅力</h1>
+
+<p>
+(1)　誰でも「歌付きの曲」を作れる民主化<br>
+
+VOCALOID最大の魅力は、音楽制作のハードルを大きく下げた点である。
+歌い手がいなくても楽曲が完成するため、作曲者のアイデアをそのまま形にできる。
+これにより、プロ・アマ問わず多くのクリエイターが誕生した。
+</p>
+
+<p>
+(2)　キャラクター性による拡張性<br>
+
+初音ミクをはじめとするVOCALOIDは、単なるソフトではなく「キャラクター」として扱われる。
+そのため、イラスト・アニメ・ゲーム・ライブなど多方面に展開され、音楽ソフトの枠を超えたメディアミックス文化を形成した。
+</p>
+
+<p>
+(3)　インターネット文化との親和性<br>
+
+VOCALOID楽曲は、動画投稿サイトと強く結びついている。
+コメント文化や二次創作、リミックスなどが活発に行われることで、作品が一方向ではなく「参加型」で発展していく点が特徴である。
+</p>
+
+<h1>4.課題・問題点の分析</h1>
+
+<p>
+(1)　人間らしさの限界<br>
+
+技術は進化しているものの、感情表現や自然な歌い方においては人間の歌声に完全には及ばない部分がある。
+このため、調整(調声)には高度な技術と時間が必要になる。
+</p>
+
+<p>
+(2)　楽曲の飽和と差別化の難しさ<br>
+
+誰でも制作できるという利点は、同時に作品数の増加を招いている。
+その結果、優れた楽曲でも埋もれてしまうことがあり、個性やマーケティング力が重要になっている。
+</p>
+
+<p>
+(3)　キャラクター依存<br>
+
+人気の多くが特定のキャラクターに集中しているため、新しいVOCALOIDが注目されにくいという課題もある。
+</p>
+
+<h1>5.社会評価と影響</h1>
+
+<p>
+VOCALOIDは、日本発のデジタル文化として世界的に評価されている。
+ライブイベントや海外展開も行われ、バーチャルシンガーという新しい存在を確立した。
+また、個人クリエイターが活躍できる場を広げた点で、現代の音楽文化に大きな影響を与えている。
+</p>
+
+<h1>6.まとめ</h1>
+
+<p>
+VOCALOIDは単なる音声合成ソフトではなく、「誰もが表現者になれる時代」を象徴する存在である。
+その魅力は、創作の自由度とコミュニティによる発展性にある。一方で、作品の飽和や技術的限界といった課題も抱えている。
+しかし、これらを含めてもVOCALOIDは音楽制作のあり方を大きく変えた革新的な文化であり、今後も進化し続けると考えられる。
+</p>
+
+
+<h1>UTAUとは何かと作られた背景</h1>
+
+<p>
+UTAUとは、2008年に個人開発者である飴屋/菖蒲氏によって公開された歌声合成ソフトである。
+VOCALOIDと同様に歌を合成することができるが、最大の特徴は「ユーザー自身が音声を録音して音源を作成できる」という点にある。
+これにより、特定の企業に依存せず誰でも自由にキャラクターや歌声を生み出すことが可能となっている。
+UTAUが誕生した背景には、「より自由に歌声合成を使いたい」というニーズがあったと考えられる。<br>
+VOCALOIDは高品質である一方、ソフトや音楽が有料であるため、誰でも簡単に始められるものではなかった。
+そこで、無料で使えるUTAUの登場は多くのユーザーにとって創作のハードルを下げる存在となった。
+その代表的な例が「重音テト」である。
+匿名掲示板「2チャンネル」のニュー速VIP版で架空のVOCALOIDとして作られました。その発端は「嘘のボカロ新製品」というジョークでしたが、
+ネット上の人々の熱意によりUTAUの音源として実体化しました。
+この事例から分かるように、UTAUは企業主導ではなく、ユーザーの創造力とコミュニティによって発展する文化を持っている。<br>
+つまりUTAUは単なるソフトではなく「誰でもキャラクターと歌声を生み出せる創作プラットフォーム」であると言える。
+この点が商業的に展開されるVOCALOIDとの大きな違いであり、UTAU独自の魅力である。
+<br>
+例 → 重音テト、ずんだもん etc..<br>
+</p>
+
+<h1>CeVIOとは何か</h1>
+
+<p>
+CeVIOとは音声合成技術を用いたソフトウェアであり、歌声だけでなく音声読み上げにも対応している点が特徴である。
+VOCALOIDやUTAUと同様に歌を作ることができるが、特に自然な話し声の再現できるという強みがある。
+<br>
+例 → 可不(KAFU)、知声 etc..<br>
+
+</p>
+
+</div>
+
+<script>
+
+function showPage(id){
+    document.getElementById("home").style.display="none";
+
+    document.querySelectorAll(".page").forEach(function(page){
+        page.classList.remove("active");
+    });
+
+    document.getElementById(id).classList.add("active");
+}
+
+function backHome(){
+
+    document.getElementById("home").style.display="flex";
+
+    document.querySelectorAll(".page").forEach(function(page){
+        page.classList.remove("active");
+    });
+
+}
+
+function openYoutube(url){
+    window.open(url,"_blank");
+}
+
+</script>
+
+</body>
+</html>
